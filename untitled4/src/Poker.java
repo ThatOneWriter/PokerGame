@@ -57,19 +57,6 @@ public class Poker {
     }
 
     public static boolean fullHouse(int[] numbers) {
-        if (numbers.size() < 5) {
-            return false;
-        }
-
-        Arrays.sort(numbers);
-
-        if (numbers[0] == numbers[3]) {
-            return false;
-        }
-
-        if (numbers[1] == numbers[4]) {
-            return false;
-        }
 
     }
 
@@ -90,17 +77,6 @@ public class Poker {
     }
 
     public static boolean twoPair(int[] numbers) {
-        if (numbers.size() < 5) {
-            return false;
-        }
-
-        int num = numbers.get(0);
-        for (int i = 0; i < 5; i++)
-        {
-            if (numbers.get(i) != num) {
-                return false;
-            }
-        }
         return true;
     }
 
