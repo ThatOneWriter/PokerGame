@@ -105,33 +105,11 @@ public class Poker {
     }
 
     public static boolean onePair(int[] numbers) {
-        if (numbers.size() < 5) {
-            return false;
-        }
-
-        int num = numbers.get(0);
-        for (int i = 0; i < 5; i++)
-        {
-            if (numbers.get(i) != num) {
-                return false;
-            }
-        }
         return true;
     }
 
 
     public static boolean highCard(int[] numbers) {
-        if (numbers.size() < 5) {
-            return false;
-        }
-
-        int num = numbers.get(0);
-        for (int i = 0; i < 5; i++)
-        {
-            if (numbers.get(i) != num) {
-                return false;
-            }
-        }
         return true;;
     }
 
