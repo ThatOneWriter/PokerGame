@@ -44,7 +44,7 @@ public class Poker {
             return false;
         }
 
-        Arrays.sort(numbers);
+        
 
         if (numbers[0] == numbers[3]) {
             return false;
@@ -65,7 +65,7 @@ public class Poker {
             return false;
         }
 
-        Arrays.sort[numbers];
+        
 
         for (int i = 0; i < numbers.length - 2; i++)
         {
