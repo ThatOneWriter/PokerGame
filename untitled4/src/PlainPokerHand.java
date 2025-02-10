@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class Poker {
+public class PlainPokerHand {
 
     private String cards;
     
