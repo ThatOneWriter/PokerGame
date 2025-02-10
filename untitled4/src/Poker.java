@@ -6,24 +6,6 @@ public class Poker {
     private static String handType;
 
 
-    public static void main(String[] args)
-    {
-        String[] poker = new String[]{"Number of five of a kind hands: " + fiveOfAKind() + "\n",
-                "Number of full house hands: " + fullHouse() + "\n",
-                "Number of four of a kind hands: " + fourOfAKind() + "\n",
-                "Number of three of a kind hands: " + threeOfAKind() + "\n",
-                "Number of two pair hands: " + twoPair() + "\n",
-                "Number of one pair hands: " + onePair() + "\n",
-                "Number of high card hands: " + highCard() + "\n",
-                "Total Bid Value: " + totalBidAmount() + "\n",
-                "Total Bid Value With Jacks Wild: " + anyJacks() + "\n"};
-
-
-        System.out.println(Arrays.toString(poker));
-    }
-
-
-
     public static boolean fiveOfAKind(int[] numbers) {
         if (numbers.size() < 5) {
             return false;
