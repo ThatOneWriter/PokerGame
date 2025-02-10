@@ -87,11 +87,14 @@ public class Main {
     }
 
     public static String[] getFileData(String fileName) {
-         String[] poker = {"3","2","10","3", "King"};
-
-        File f = new File("src/input");
-
-        String fileData = "";
+        ArrayList<String> lines = new ArrayList<>();
+        try {
+            File file = new File(fileName);
+            Scanner scanner = new Scanner(file);
+            while (scanner.hasNextLine()) {
+                lines.add(scanner.nextLine());
+            }
+            scanner.close();
     }
 }
        
